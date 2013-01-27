@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head><meta charset=utf-8 /></head>
+	<body><p>還有<b id="b">3</b>到<a href="" id="a"></a></p>
+<script>
+
+
+var g = location.href.split('#')[1].split(',')[1],
+    a= document.getElementById('a'),
+    b= document.getElementById('b');
+setInterval(function(){
+if(cur==0){
+a.innerHTML = g;a.href = g;
+}else{
+b.innerHTML = b.innerHTML-1;
+}
+},1000);
+</script>
+</body>
+</html>
